@@ -1,4 +1,9 @@
-
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > 740);
+    });
+  });
 
 $(document).ready(function(){
     setTimeout(function(){
