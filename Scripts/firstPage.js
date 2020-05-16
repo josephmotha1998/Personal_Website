@@ -1,7 +1,4 @@
 
-const scroll = new SmoothScroll('.navbar a[href*="#"]',{
-    speed:800
-});
 
 $(document).ready(function(){
     setTimeout(function(){
@@ -9,18 +6,34 @@ $(document).ready(function(){
 
     },3000);
 });
-// $('.navbar a').on('click', function (e) {
-//   if (this.hash !== '') {
-//     e.preventDefault();
+ScrollReveal({ distance: '60px' },{ reset: false },{ delay: 5000 });
+ScrollReveal().reveal('.navbar', { origin: 'bottom' });
+ScrollReveal().reveal('.showcase-left', { origin: 'top' });
+ScrollReveal().reveal('.showcase-right', { origin: 'right' });
+ScrollReveal().reveal('.showcase-btn', { origin: 'bottom' });
+ScrollReveal().reveal('#testimonial div', { origin: 'bottom' });
+ScrollReveal().reveal('.info-left', { origin: 'left' });
+ScrollReveal().reveal('.info-right', { origin: 'right' });
 
-//     const hash = this.hash;
+    
+        $(function() {
+            // Smooth Scrolling
+            $('a[href*="#"]:not([href="#"])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html, body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+              }
+            });
+          });
+// Wrap every letter in a span
 
-//     $('html, body')
-//       .animate({
-//         scrollTop: $(hash).offset().top
-//       },800);
-//   }
-// });
+
 
 
 

@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Joseph Motha</title>
     <link rel="stylesheet" href="css/firstPage.css">
-    </head>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+  </head>
 <body>
 
     <div class="loader-wrapper">
@@ -14,40 +19,131 @@
         
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-      </div>
-    <div class="container">
-        
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
+    </div>
+      <nav class="navbar navbar-fixed-top">
+        <ul>
+            <li><a href="#showcase">Home</a></li>
+            <li><a href="#info1">About</a></li>
+            <li><a href="#contact">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    
         <section id="home">
-          <h1>Welcome To My Site</h1>
-          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
+          <h1>Welcome</h1>
+          <a href="#showcase" class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </a>
         </section>
-        <section id="about">
-            <h1>About</h1>
-            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
-        </section>
-        <section id="projects">
-            <h1>Projects</h1>
-            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
-        </section>
-        <section id="contact">
-            <h1>Contact</h1>
-            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
-        </section>
+  
+
+    <section id="showcase">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="showcase-left">
+              <img src="media/pimg1.jpg">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="showcase-right">
+              <h1>About Me</h1>
+              <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            </div>
+            
+            <button type="button" class="btn btn-secondary">Secondary</button>
+          </div>
+        </div>
       </div>
+    </section>
 
+    <section id="testimonial">
+      <div class="container">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"</p>
+        <p class="customer">- John Doe</p>
+      </div>
+    </section>
+
+    <section id="info1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="info-left">
+              <img src="media/pimg2.jpg">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="info-right">
+              <h2>Get To Know Google Home</h2>
+              <p>Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+              <br>
+              <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <section id="info2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="info-left">
+              <h2>Info Block One</h2>
+              <p>Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="info-right">
+              <h2>Info Block Two</h2>
+              <p>Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-sm-5">
+            <form>
+              <div class="form-group">
+                <label>Name: </label>
+                <input class="form-control" type="text" name="" value="" placeholder="Enter Name">
+              </div>
+              <div class="form-group">
+                <label>Email: </label>
+                <input class="form-control" type="text" name="" value="" placeholder="Enter Email">
+              </div>
+              <div class="form-group">
+                <label>Message: </label>
+                <textarea class="form-control" name="" value="" placeholder="Enter Message"></textarea>
+              </div>
+              <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            </form>
+          </div>
+          <div class="col-md-7 col-sm-7">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="text-center">Joseph Motha &copy; 2017</p>
+    </footer>
+    
       
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="../scripts/firstPage.js"></script>
-    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+
+
     </body>
 </html>
