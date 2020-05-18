@@ -6,9 +6,23 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+.container{
+  width:100%;
+  height: 100%;
+}
+
+section{
+  width:100%;
+  height:100vh;
+}
+
 
 #home h1{
   color: #fff;
+}
+
+.headshot{
+  border-radius: 50%;
 }
 
 .arrow{
@@ -117,8 +131,8 @@ footer{
 
 }
 .navbar-fixed-top.scrolled {
-  background-color: rgba(255,255,255,0.4) !important;
-  transition: background-color 200ms linear;
+  background-color: rgba(255,255,255,0.8) !important;
+  transition: background-color 200ms linear !important;
 }
 
 .navbar {
@@ -129,6 +143,13 @@ footer{
   width: 100%;
   height: 50px;
   background: transparent;
+}
+
+.navbar-brand{
+  color: rgba(0,0,0,0.5) !important;
+}
+.navbar-brand:hover{
+  color: rgba(0,0,0,1) !important;
 }
 
 .navbar ul {
@@ -150,7 +171,7 @@ footer{
 }
 
 .navbar ul li a:hover {
-  color: skyblue;
+  color: #000 !important;
 }
 
 section#home{
