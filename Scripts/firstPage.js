@@ -1,6 +1,7 @@
 $(function () {
     $(document).scroll(function () {
       var $nav = $(".navbar-fixed-top");
+      // console.log("gsdfsd");
       $nav.toggleClass('scrolled', $(this).scrollTop() > 740);
     });
   });

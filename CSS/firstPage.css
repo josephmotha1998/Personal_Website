@@ -28,34 +28,59 @@ hr.projects-title{
   'project1 project2 project3'
   'project4 project5 project6';
   grid-auto-rows: minmax(300px,auto);
+  
+}
+
+.pro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  z-index: -2;
+}
+
+.pro:hover{
+  opacity:0.5 !important;
+  color: #000;
 }
 
 .project1{
   background: url(/media/project1.jpg);
+  border-radius: 25px;
   background-size: cover;
   background-position: center;
+  
 }
+.project1:hover  p:after{
+  content: 'fdfsfs';
+}
+
 .project2{
+  border-radius: 25px;
   background: url(/media/project1.jpg);
   background-size: cover;
   background-position: center;
 }
 .project3{
+  border-radius: 25px;
   background: url(/media/project1.jpg);
   background-size: cover;
   background-position: center;
 }
 .project4{
+  border-radius: 25px;
   background: url(/media/project1.jpg);
   background-size: cover;
   background-position: center;
 }
 .project5{
+  border-radius: 25px;
   background: url(/media/project1.jpg);
   background-size: cover;
   background-position: center;
 }
 .project6{
+  border-radius: 25px;
   background: url(/media/project1.jpg);
   background-size: cover;
   background-position: center;
@@ -147,7 +172,6 @@ section{
 #testimonial p{
   font-size:32px;
   font-family: 'Josefin Sans';
-  color:#000;
 }
 
 #testimonial p.customer{
@@ -226,7 +250,8 @@ footer{
 }
 
 section#home{
-  background: url('../media/pimg1.jpg') no-repeat center center/cover;;
+  background: url('../media/pimg1.jpg') no-repeat center center/cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
