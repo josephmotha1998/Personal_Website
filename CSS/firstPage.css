@@ -8,7 +8,7 @@ body{
 
 section{
   width:100%;
-  height:100vh;
+  height:auto;
 }
 
 .navbar-fixed-top.scrolled {
@@ -115,20 +115,49 @@ section#home{
 
 #showcase{
 padding-top: 20px;
-  
+justify-items: center;
+grid-template-areas: "content";
+height: auto;
+background: #F8F8FF;
+padding-bottom: 50px;
+font-family: 'Josefin Sans'
+
+}
+#showcase i{
+  color: #82c4c3
 }
 .showcase-wrapper{
-  padding: 20px 20vh 20px 20vh;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+display: block;
+align-content: center;
+text-align: center;
+
 }
-.showcase-wrapper p{
-  margin-top: auto;
-  margin-bottom: auto;
+.showcase-wrapper h3{
+ margin-top: 3vh;
+ margin-bottom: 3vh;
+ color: cornflowerblue;
+}
+.showcase-wrapper .description{
+  font-size: 20px;
+  margin-top: 4vh;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  line-height: 40px;
+  font-weight: lighter;
+}
+
+.showcase-wrapper .break{
+  margin-top: 10vh;
+  margin-bottom: 12vh;
+  line-height: 30px;
+  letter-spacing: 10px;
+  
+  font-weight: 2000;
 }
 
 hr.About-Me-hr{
   margin-top: 30px;
+  width: 50vw;
 }
 
 hr.AboutMeTitle{
@@ -136,36 +165,42 @@ hr.AboutMeTitle{
 }
 
 .quote {
+  font-size: 20px;
   padding-top: 50px;
-  display: grid;
-  grid-template-columns: 1/4;
   text-align: center;
 }
 
 hr.quote-underline{
- border: none;
+  border: none;
   background: #a0ced9;
   height: 4px;
   width: 400px;
+  margin-bottom: 0px;
 }
 
 
 .headshot{
   border-radius: 50%;
-  max-width:350px;
-  height:350px;
-  grid-row: 1/3;
-  margin-left: 80px;
+  max-width:200px;
+  height:200px;
  
 }
 
 hr.projects-title{
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .projects-header{
   display: grid;
   grid-column: 1/4;
+}
+
+#projects{
+  background:#f1f1f1;
+  padding: 20px 0 30px 0;
+  text-align:center;
+  padding-top:33px;
+  padding-bottom: 40px;
 }
 
 .projects{
@@ -204,9 +239,8 @@ hr.projects-title{
 }
 
 .project1{
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/project1.webp);
-  /* background: url(/media/project1.jpg); */
   border-radius: 25px;
+  background: url(/media/project1.webp);
   background-size: cover;
   background-position: center;
   
@@ -219,13 +253,13 @@ hr.projects-title{
 
 .project1:hover  p:after{
   line-height: 5px;
-  font-size: 20px;
+  font-size: 18px;
   content: 'A connet 4 AI made using javascript and the p5.js library. The minimax algorithm was used with alpha-beta pruning to look up to 10 moves ahead. Try and beat it!';
 }
 
 .project2{
   border-radius: 25px;
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/dragonboat.webp);
+  background: url(/media/dragonboat.webp);
   background-size: cover;
   background-position: center;
 }
@@ -242,7 +276,7 @@ hr.projects-title{
 }
 .project3{
   border-radius: 25px;
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/website.webp);
+  background: url(/media/website2.webp);
   background-size: cover;
   background-position: center;
 }
@@ -253,6 +287,7 @@ hr.projects-title{
 }
 
 .project3:hover  p:after{
+  padding-top: 3rem;
   line-height: 5px;
   font-size: 20px;
   content: 'I have a passion for UX design so I decided to build my own website! I used html, CSS, javascript, and some framworks such as bootstrap and jquery.'
@@ -260,7 +295,7 @@ hr.projects-title{
 
 .project4{
   border-radius: 25px;
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/SHMUP.webp);
+  background: url(/media/SHMUP.webp);
   background-size: cover;
   background-position: center;
 }
@@ -278,7 +313,7 @@ hr.projects-title{
 
 .project5{
   border-radius: 25px;
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/instagram.webp);
+  background: url(/media/instagram2.webp);
   background-size: cover;
   background-position: center;
 }
@@ -295,7 +330,7 @@ hr.projects-title{
 }
 .project6{
   border-radius: 25px;
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/earthquake.webp);
+  background: url(/media/earthquake.webp);
   background-size: cover;
   background-position: center;
 }
@@ -307,15 +342,11 @@ hr.projects-title{
 .project6:hover  p:after{
   line-height: 5px;
   font-size: 20px;
-  content: 'Usint the p5.js library and the google maps API i visualized the earthquakes around the world! I imported eathquake data from a CSV file and plotted it on a 2D visualization of the earth.';
+  content: 'Using the p5.js library and the google maps API i visualized the earthquakes around the world! I imported eathquake data from a CSV file and plotted it on a 2D visualization of the earth.';
 }
 
-
-#projects{
-  background:#f1f1f1;
-  padding: 20px 0 30px 0;
-  text-align:center;
-  margin-top:40px;
+hr .experince-hr{
+  padding-top: 50px !important;
 }
 
 
