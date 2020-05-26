@@ -12,16 +12,7 @@ $(document).ready(function(){
 
     },3000);
 });
-ScrollReveal({ distance: '60px' },{ reset: false },{ delay: 5000 });
-ScrollReveal().reveal('.navbar', { origin: 'bottom' });
-ScrollReveal().reveal('.showcase-left', { origin: 'top' });
-ScrollReveal().reveal('.showcase-right', { origin: 'right' });
-ScrollReveal().reveal('.showcase-btn', { origin: 'bottom' });
-ScrollReveal().reveal('#testimonial div', { origin: 'bottom' });
-ScrollReveal().reveal('.info-left', { origin: 'left' });
-ScrollReveal().reveal('.info-right', { origin: 'right' });
-
-    
+ 
         $(function() {
             // Smooth Scrolling
             $('a[href*="#"]:not([href="#"])').click(function() {
@@ -37,6 +28,7 @@ ScrollReveal().reveal('.info-right', { origin: 'right' });
               }
             });
           });
+
 // Wrap every letter in a span
 
 

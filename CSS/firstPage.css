@@ -6,212 +6,11 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-.container{
-  width:100%;
-  height: 100%;
-}
-
-hr.projects-title{
-  margin-top: 30px;
-}
-.projects-header{
-  display: grid;
-  grid-column: 1/4;
-}
-
-.projects{
-  margin-left: 1em;
-  margin-right: 1em;
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: repeat(3,1fr);
-  grid-auto-rows: minmax(300px,auto);
-  
-}
-
-.pro{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #fff;
-}
-
-.pro a{
-  color: #fff !important;
-  position: absolute;
-  right: 50%;
-  left: 47%;
-  bottom: 20px;
-}
-
-.project1{
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/project1.jpg);
-  /* background: url(/media/project1.jpg); */
-  border-radius: 25px;
-  background-size: cover;
-  background-position: center;
-  
-}
-
-.project1:hover p span{
-  display: none;
-}
-
-.project1:hover  p:after{
-  content: 'A connet 4 AI made using javascript and the p5.js library. The minimax algorithm was used with alpha beta pruning to look up to 10 moves ahead. Try and beat it!';
-}
-
-.project2{
-  border-radius: 25px;
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/dragonboat.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.project3{
-  border-radius: 25px;
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/website.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.project4{
-  border-radius: 25px;
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/SHMUP.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.project5{
-  border-radius: 25px;
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/instagram.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.project6{
-  border-radius: 25px;
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/earthquake.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-
 section{
   width:100%;
   height:100vh;
 }
 
-
-#home h1{
-  color: #fff;
-}
-
-.headshot{
-  border-radius: 50%;
-}
-
-.arrow{
-  position: absolute;
-  bottom: 7%;
-  
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.arrow span{
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-bottom: 5px solid #fff;
-  border-right: 5px solid #fff;
-  transform: rotate(45deg);
-  margin: -10px;
-  animation: animate 2s infinite;
-}
-.arrow span:nth-child(2){
-  animation-delay: -0.2s;
-}
-.arrow span:nth-child(3){
-  animation-delay: -0.4s;
-}
-@keyframes animate {
-  0%{
-      opacity: 0;
-      transform: rotate(45deg) translate(-20px,-20px);
-  }
-  50%{
-      opacity: 1;
-  }
-  100%{
-      opacity: 0;
-      transform: rotate(45deg) translate(20px,20px);
-  }
-}
-
-#showcase img {
-  margin-top: 30px;
-  max-width:100%;
-  height:auto;
-  margin-right: 60px;
-}
-
-#info1 img {
-  max-width:100%;
-  height:auto;
-  margin-right: 60px;
-  margin-top: 40px;
-}
-#contact img {
-  max-width:100%;
-  height:auto;
-  margin-right: 60px;
-  margin-top: 40px;
-}
-
-#showcase .showcase-right{
-  margin-top: 50px;
-}
-
-#testimonial{
-  background:#f1f1f1;
-  padding: 20px 0 30px 0;
-  text-align:center;
-  margin-top:40px;
-}
-
-#testimonial p{
-  font-size:32px;
-  font-family: 'Josefin Sans';
-}
-
-#testimonial p.customer{
-  font-size:20px;
-  color:#666;
-}
-
-#info1 .info-right{
-  margin-top:90px;
-}
-
-#info2{
-  margin:20px 0 60px 0;
-}
-
-#contact{
-  background:url(../media/pimg3.jpg);
-  padding:40px;
-  color:#fff;
-  border-top:#333 7px solid;
-  border-bottom:#333 7px solid;
-}
-
-footer{
-  padding:30px;
-}
-
-#home img{
-  border-radius: 50%;
-  width:200px;
-  height:2px;
-
-}
 .navbar-fixed-top.scrolled {
   background-color: rgba(255,255,255,0.8) !important;
   transition: background-color 200ms linear !important;
@@ -266,10 +65,265 @@ section#home{
   text-align: center;
   width: 100%;
   height: 100vh;
- 
-  /* Scroll Snap */
-  scroll-snap-align: center;
 }
+
+#home h1{
+  color: #fff;
+}
+
+.arrow{
+  position: absolute;
+  bottom: 7%;
+  
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.arrow span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+#showcase h1{
+  grid-column: 1/4;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#showcase{
+padding-top: 20px;
+  
+}
+.showcase-wrapper{
+  padding: 20px 20vh 20px 20vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.showcase-wrapper p{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+hr.About-Me-hr{
+  margin-top: 30px;
+}
+
+hr.AboutMeTitle{
+  margin-top: 30px !important;
+}
+
+.quote {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1/4;
+  text-align: center;
+}
+
+hr.quote-underline{
+ border: none;
+  background: #a0ced9;
+  height: 4px;
+  width: 400px;
+}
+
+
+.headshot{
+  border-radius: 50%;
+  max-width:350px;
+  height:350px;
+  grid-row: 1/3;
+  margin-left: 80px;
+ 
+}
+
+hr.projects-title{
+  margin-top: 30px;
+}
+
+.projects-header{
+  display: grid;
+  grid-column: 1/4;
+}
+
+.projects{
+  font-size: 32px;
+  font-family: 'Josefin Sans';
+  margin-left: 1em;
+  margin-right: 1em;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: minmax(300px,auto);
+  
+}
+
+.pro{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.pro a{
+  display: grid;
+  grid-column: 1/4;
+  font-size: 18px;
+  color: #fff !important;
+  position: absolute;
+  right: 50%;
+  left: 47%;
+  bottom: 20px;
+}
+
+.pro a:hover{
+  opacity: 0.55;
+}
+
+.project1{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/project1.webp);
+  /* background: url(/media/project1.jpg); */
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.project1:hover p span{
+  
+  display: none;
+}
+
+.project1:hover  p:after{
+  line-height: 5px;
+  font-size: 20px;
+  content: 'A connet 4 AI made using javascript and the p5.js library. The minimax algorithm was used with alpha-beta pruning to look up to 10 moves ahead. Try and beat it!';
+}
+
+.project2{
+  border-radius: 25px;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/dragonboat.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.project2:hover p span{
+  
+  display: none;
+}
+
+.project2:hover  p:after{
+  line-height: 5px;
+  font-size: 18px;
+  content: 'I used the p5.js and ml5.js and poseNet libriary for realy time human pose estimation. This judge will tell you if you are in the right A-fram form and highlight in red where improvements can be made.'
+}
+.project3{
+  border-radius: 25px;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/website.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.project3:hover p span{
+  
+  display: none;
+}
+
+.project3:hover  p:after{
+  line-height: 5px;
+  font-size: 20px;
+  content: 'I have a passion for UX design so I decided to build my own website! I used html, CSS, javascript, and some framworks such as bootstrap and jquery.'
+}
+
+.project4{
+  border-radius: 25px;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/SHMUP.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.project4:hover p span{
+  
+  display: none;
+}
+
+.project4:hover  p:after{
+  line-height: 5px;
+  font-size: 20px;
+  content: 'Me and a team made this using Unity and coded it in C#. We used modular programming to make a retro style \'shoot em up game\' with power ups and enemies. ';
+}
+
+.project5{
+  border-radius: 25px;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/instagram.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.project5:hover p span{
+  
+  display: none;
+}
+
+.project5:hover  p:after{
+  line-height: 5px;
+  font-size: 20px;
+  content: 'I found a lot of cuurent follower apps steal user data, so I built my own! I used python and Selenium to make a bot to navigate through Instagram\'s onoine website.'
+}
+.project6{
+  border-radius: 25px;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/media/earthquake.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.project6:hover p span{
+  display: none;
+}
+
+.project6:hover  p:after{
+  line-height: 5px;
+  font-size: 20px;
+  content: 'Usint the p5.js library and the google maps API i visualized the earthquakes around the world! I imported eathquake data from a CSV file and plotted it on a 2D visualization of the earth.';
+}
+
+
+#projects{
+  background:#f1f1f1;
+  padding: 20px 0 30px 0;
+  text-align:center;
+  margin-top:40px;
+}
+
+
+footer{
+  padding:30px;
+}
+
+  
 
 /* loader code */
   
@@ -401,78 +455,5 @@ section#home{
     transition: all 0.3s 1s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
 
   }
-
-  /* Icon Bob */
-@-webkit-keyframes hvr-icon-bob {
-  0% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-  50% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-  100% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-}
-@keyframes hvr-icon-bob {
-  0% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-  50% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-  100% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-}
-@-webkit-keyframes hvr-icon-bob-float {
-  100% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-}
-@keyframes hvr-icon-bob-float {
-  100% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-}
-.hvr-icon-bob {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.hvr-icon-bob .hvr-icon {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-}
-.hvr-icon-bob:hover .hvr-icon, .hvr-icon-bob:focus .hvr-icon, .hvr-icon-bob:active .hvr-icon {
-  -webkit-animation-name: hvr-icon-bob-float, hvr-icon-bob;
-  animation-name: hvr-icon-bob-float, hvr-icon-bob;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
-  
-}
-
 
   

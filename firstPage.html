@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Joseph Motha</title>
     <link rel="stylesheet" href="css/firstPage.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="css/hover-min.css" rel="stylesheet">
 
   </head>
 <body>
@@ -35,7 +36,7 @@
             <a class="nav-link" href="#showcase">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testimonial">Projects</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -56,59 +57,55 @@
   
 
     <section id="showcase">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <div class="showcase-left">
-              <img class="headshot" src="media/headshot1.jpg">
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <div class="showcase-right">
-              <h1>About Me</h1>
-              <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-            </div>
+      <hr class="About-Me-hr">
+      <h1>About Me</h1>
+      <div class="showcase-wrapper">
+        <img class="headshot" src="media/headshot2.jpg" data-aos="fade-right">
             
-            <button type="button" class="btn btn-secondary">Secondary</button>
-            <div class="container">
+        <p data-aos="fade-left"> Hey! My name is Joseph(Joey) and I am a fourth year software engineering and business dual degree student at the University of Western Ontario. I have always had a passion for problem solving and technology so programming was a really a perfect fit as a career path. </p>
              
-              <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"</p>
-              <p class="customer">- John Doe</p>
-            </div>
-          </div>
-        </div>
+        <p data-aos="fade-left">I started off my university career in Medical Sciences but my affinity for tech and people drew me to switch paths and purse my current dual degree. In the past I've has the opportunity to teach children how to code. I am currently doing research into the systems design of COVID-19 screening tools and I am a data science intern at a boutique consulting firm in Toronto, Canada  </p>  
+
+       </div>
+
+
+      <div class="quote">
+        <p>Some quotes I live by:</p>
+        <p>Life is about making an impact, not making an income.</p>
+        <p class="customer">-Kevin Kruse</p>
       </div>
+      <hr class="quote-underline">
+      
     </section>
 
-    <section id="testimonial">
+    <section id="projects">
       <hr class="projects-title">
       <h1 class="projects-header">Projects</h1>
 
       <div class="projects">
        
-        <div class="pro project1">
-          <!-- <img src="/media/pimg1" alt=""> -->
+        <div class="pro project1" data-aos="fade-right">
           <p> <span>Connect 4 AI</span></p>
           <a href="https://github.com/josephmotha1998" target="_blank" class="hvr-icon-bob"><i class="fab fa-github fa-2x hvr-icon"></i></a>
         </div>
-        <div class="pro project2" >
-          <p>Dragon Boat Paddle Judge</p>
+        <div class="pro project2" data-aos="fade-down">
+          <p> <span>Dragon Boat Paddle Judge</span> </p>
           <a href="https://github.com/josephmotha1998" target="_blank" class="hvr-icon-bob"><i class="fab fa-github fa-2x hvr-icon"></i></a>
         </div>
-        <div class="pro project3">
-          <p>This website</p>
+        <div class="pro project3" data-aos="fade-left">
+          <p> <span>This website</span></p>
           <a href="https://github.com/josephmotha1998" target="_blank" class="hvr-icon-bob"><i class="fab fa-github fa-2x hvr-icon"></i></a>
         </div>
-        <div class="pro project4">
-          <p>Retro SHMUP Game</p>
+        <div class="pro project4" data-aos="fade-right">
+          <p> <span>Retro SHMUP Game</span></p>
           <a href="https://github.com/josephmotha1998" target="_blank" class="hvr-icon-bob"><i class="fab fa-github fa-2x hvr-icon"></i></a>
         </div>
-        <div class="pro project5">
-          <p>Instagram followers bot</p>   
+        <div class="pro project5" data-aos="fade-up">
+          <p> <span>Instagram followers bot</span></p>   
           <a href="https://github.com/josephmotha1998" target="_blank" class="hvr-icon-bob"><i class="fab fa-github fa-2x hvr-icon"></i></a>
         </div>
-        <div class="pro project6">
-          <p>Earthquake Visualization Tracker</p>   
+        <div class="pro project6" data-aos="fade-left">
+          <p> <span>Earthquake Visualization Tracker</span></p>   
           <a href="https://github.com/josephmotha1998" target="_blank" class="hvr-icon-bob"><i class="fab fa-github fa-2x hvr-icon"></i></a>     
         </div>
       </div>
@@ -116,28 +113,11 @@
       
     </section>
 
-    <section id="info1">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <div class="info-left">
-              <img src="media/pimg2.jpg">
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <div class="info-right">
-              <h2>Get To Know</h2>
-              <p>Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-              <br>
-              <button type="button" class="btn btn-outline-secondary">Secondary</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
-    <hr>
-    <section id="info2">
+   
+    <section id="expereince">
+      <h2>Expereince</h2>
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6">
@@ -156,34 +136,8 @@
       </div>
     </section>
 
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-sm-5">
-            <form>
-              <div class="form-group">
-                <label>Name: </label>
-                <input class="form-control" type="text" name="" value="" placeholder="Enter Name">
-              </div>
-              <div class="form-group">
-                <label>Email: </label>
-                <input class="form-control" type="text" name="" value="" placeholder="Enter Email">
-              </div>
-              <div class="form-group">
-                <label>Message: </label>
-                <textarea class="form-control" name="" value="" placeholder="Enter Message"></textarea>
-              </div>
-              <button type="button" class="btn btn-outline-secondary">Secondary</button>
-            </form>
-          </div>
-          <div class="col-md-7 col-sm-7">
-
-          </div>
-        </div>
-      </div>
-    </section>
     <footer>
-      <p class="text-center">Joseph Motha &copy; 2017</p>
+      <p class="text-center">Joseph Motha &copy; 2020</p>
     </footer>
     
       
@@ -191,6 +145,14 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="../scripts/firstPage.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:200,
+        duration:500,
+        once: true
+      });
+    </script>
     
 
 
