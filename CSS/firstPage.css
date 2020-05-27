@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
+
 body{
   margin-top:70px;
   font-size:16px;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden
+  
 }
 
 section{
@@ -188,11 +191,13 @@ hr.quote-underline{
 
 hr.projects-title{
   padding-top: 30px;
+  width: 50vw;
 }
 
 .projects-header{
   display: grid;
   grid-column: 1/4;
+  padding-bottom: 30px;
 }
 
 #projects{
@@ -327,7 +332,7 @@ hr.projects-title{
 .project5:hover  p:after{
   line-height: 5px;
   font-size: 20px;
-  content: 'I found a lot of cuurent follower apps steal user data, so I built my own! I used python and Selenium to make a bot to navigate through Instagram\'s onoine website.'
+  content: 'I found a lot of cuurent follower apps steal user data, so I built my own! I used python and Selenium to make a bot to navigate through Instagram\'s online website.'
 }
 .project6{
   border-radius: 25px;
@@ -346,22 +351,25 @@ hr.projects-title{
   content: 'Using the p5.js library and the google maps API i visualized the earthquakes around the world! I imported eathquake data from a CSV file and plotted it on a 2D visualization of the earth.';
 }
 
+
 hr.experience{
   padding-top: 30px;
+  width: 50vw;
 }
 
 .experience-header{
   display: grid;
   grid-column: 1/4;
+  text-align: center;
 }
 
 #experience{
   font-family: 'Josefin Sans';
   background:#F8F8FF;
   padding: 20px 0 30px 0;
-  text-align:center;
   padding-top:33px;
   padding-bottom: 40px;
+  height: auto;
 }
 
 .experience-wrapper{
@@ -370,9 +378,31 @@ hr.experience{
   padding-right: 5vw;
   padding-left: 10vw;
   padding-top: 30px;
-  /* justify-items: center; */
   align-items: center;
+  justify-items: center;
   grid-row-gap: 20px;
+}
+
+.company{
+  display: inline;
+  font-weight: 350;
+}
+.job-header{
+  display: inline;
+}
+
+.job{
+  padding-left: 3vw;;
+}
+
+img.dpcdsb{
+  height: 110px !important;
+  width: 250px !important;
+ 
+}
+img.datalya{
+  height: 150px !important;
+  width: 150px !important;
   
 }
 
@@ -381,27 +411,32 @@ hr.experience{
   width: 200px;
   margin-top: 3vh;
   margin-bottom: 3vh;
-}
-.job-header{
-  text-align:left !important;
-  justify-items: start !important;
-  align-items: start !important;
-  padding-left: 2vw;
+  border-radius: 10%;
   
 }
 
 
-.job .date{
-  text-align: left;
-  padding-left: 2vw;
-}
-
 
 
 footer{
+  display: inline;
   border-top: darkgray;
   padding:30px;
   background: #F8F8FF;
+}
+
+.social{
+  text-align: center;
+}
+
+.social a {
+  margin: 0 15px;
+  color: #a0ced9;
+}
+
+a:hover{
+    opacity: 0.55;
+    transform: scale(1.5);
 }
 
   
@@ -537,4 +572,27 @@ footer{
 
   }
 
-  
+  /* media queries */
+
+
+
+@media(max-width:1000px){
+  .projects{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+  .projects{
+    grid-template-columns: 1fr;
+  }
+
+  .experience-wrapper{
+    display: block;
+    justify-content: center;
+  }
+  .logo{
+    padding-left: auto;
+    padding-right: auto;
+  }
+}

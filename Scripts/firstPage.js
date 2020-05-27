@@ -12,7 +12,9 @@ $(document).ready(function(){
 
     },3000);
 });
- 
+
+
+    
         $(function() {
             // Smooth Scrolling
             $('a[href*="#"]:not([href="#"])').click(function() {
@@ -28,7 +30,6 @@ $(document).ready(function(){
               }
             });
           });
-
 // Wrap every letter in a span
 
 
