@@ -59,7 +59,7 @@ section{
 }
 
 section#home{
-  background: url('../media/pimg1.jpg') no-repeat center center/cover;
+  background: url('../media/pimg1-min.jpg') no-repeat center center/cover;
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -246,7 +246,7 @@ hr.projects-title{
 
 .project1{
   border-radius: 25px;
-  background: url(/media/project1.webp);
+  background: url(/media/project1.jpg);
   background-size: cover;
   background-position: center;
   
@@ -265,7 +265,7 @@ hr.projects-title{
 
 .project2{
   border-radius: 25px;
-  background: url(/media/dragonboat.webp);
+  background: url(/media/dragonboat.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -278,11 +278,11 @@ hr.projects-title{
 .project2:hover  p:after{
   line-height: 5px;
   font-size: 18px;
-  content: 'I used the p5.js and ml5.js and poseNet libriary for realy time human pose estimation. This judge will tell you if you are in the right A-fram form and highlight in red where improvements can be made.'
+  content: 'I used the p5.js, ml5.js and poseNet libriary for realy time human pose estimation. This judge will tell you if you are in the right A-fram form and highlight in red where improvements can be made.'
 }
 .project3{
   border-radius: 25px;
-  background: url(/media/website2.webp);
+  background: url(/media/website.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -301,7 +301,7 @@ hr.projects-title{
 
 .project4{
   border-radius: 25px;
-  background: url(/media/SHMUP.webp);
+  background: url(/media/SHMUP.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -319,7 +319,7 @@ hr.projects-title{
 
 .project5{
   border-radius: 25px;
-  background: url(/media/instagram2.webp);
+  background: url(/media/instagram2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -336,7 +336,7 @@ hr.projects-title{
 }
 .project6{
   border-radius: 25px;
-  background: url(/media/earthquake.webp);
+  background: url(/media/earthquake.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -434,9 +434,9 @@ footer{
   color: #a0ced9;
 }
 
-a:hover{
+.social a:hover{
     opacity: 0.55;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
   
